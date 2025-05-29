@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Morse Code Converter</h1>
+    </header>
+    <div class="container">
+        <textarea type="text" id="textInput" placeholder="Enter text"></textarea><br>
+        <button onclick="convertToMorse()">Convert to Morse</button>
+        <p id="morseOutput"></p>
+
+        <textarea type="text" id="morseInput" placeholder="Enter Morse code"></textarea><br>
+        <button onclick="convertToText()">Convert to Text</button>
+        <p id="textOutput"></p>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
